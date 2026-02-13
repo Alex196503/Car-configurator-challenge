@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design you tesla car configurator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h3 class="text-primary">0% APR available for qualified buyers. <a class="link" href="#">Learn More</a></h3> 
+    </header>
+    <main class="container">
+        <div class="container-fluid">
+            <img src="images/logo.svg" alt="Image with the Tesla Logo">
+            <a href="#" class="link-wrapper"><i class="fa-solid fa-globe"></i> <h3>US</h3></a>            
+        </div>
+        <section class="section-fluid">
+            <div class="container-hero" aria-live="polite">
+                <img class="img-fluid" src="images/model-y-deep-blue-metallic-performance.jpg" alt="Image with your model">
+                <img class="img-second" src="images/model-y-interior-dark.jpg" alt="Image inside the car">
+            </div>
+            <section class="container-mt3">
+                <h1 class="lead">Model Y</h1>
+                <h2 class="text-secondary">Customize your car</h2>
+                <p class="text-ld">Exterior Color</p>
+            <div class="row">
+                <div class="container-image" data-color="stealth-grey">
+                    <img src="images/button-stealth-grey.avif" alt="Image with the stealth grey btn">
+                </div>
+                <div class="container-image" data-color="pearl-white">
+                    <img src="images/button-pearl-white.avif" alt="Image with the button pearl-white">
+                </div>
+                <div class="container-image" data-color="deep-blue-metallic">
+                    <img src="images/button-deep-blue-metallic.avif" alt="Image with the blue btn">
+                </div>
+                <div class="container-image" data-color="solid-black">
+                    <img src="images/button-solid-black.avif" alt="Image with the solid black btn">
+                </div>
+                <div class="container-image" data-color="ultra-red">
+                    <img src="images/button-ultra-red.avif" alt="Image with the red button"> 
+                </div>
+                <div class="container-image" data-color="quick-silver">
+                    <img src="images/button-quicksilver.avif" alt="Image with the quicksilver btn">
+                </div>
+            </div>
+            <h3 class="text-ld">Interior Color</h3>
+            <div class="row p-0">
+                <div class="container-img" data-color="Dark">
+                <img src="images/button-dark.avif" alt="Image with the dark button">
+                </div>
+                <div class="container-img" data-color="Light">
+                    <img src="images/button-light.avif" alt="Image with the light btn">
+                </div>
+            </div>
+                <p class="text-ld">Wheels</p>
+                <div class="column">
+                <button type="button" class="btn-primary black text-white">Standard Wheels</button>
+                <button type="button" class="btn-primary white">Performance Wheels (+2,500$)</button>
+                </div>
+            <div class="checkbox-container">
+                <p class="text-ld">Full Self-Driving</p>
+                <div class="checkbox">
+                <input type="checkbox" class="form-control" name="fullSelf" id="fullSelfDriving">
+                <label for="fullSelfDriving" class="label">Add Full Self Driving for $8,500</label>
+                </div>
+            </div>
+            <section class="section-row">
+                <p class="text-ld">Performance Package</p>
+                <button type="button" class="btn-primary white">Performance Upgrade(+5,000$)</button>
+            </section>
+            <h3 class="text-ld">Accesories</h3>
+            <section class="price-container">
+                <div class="container-mt2">
+                    <label for="checkbox2">Center Console Trays</label>
+                    <div class="wrapper">
+                    <input type="checkbox" name="checkbox" id="checkbox2" data-accesory="Center Console Trays" class="form-control">
+                    <span class="span">$35</span>
+                    </div>
+                </div>
+                 <div class="container-mt2">
+                    <label for="checkbox3">SunShade</label>
+                    <div class="wrapper">
+                    <input type="checkbox" name="checkbox" id="checkbox3" data-accesory="SunShade" class="form-control">
+                    <span class="span">$105</span>
+                    </div>
+                </div>
+                 <div class="container-mt2">
+                    <label for="checkbox4">All-Weather Interior Liners</label>
+                    <div class="wrapper">
+                    <input type="checkbox" name="checkbox" id="checkbox4" data-accesory="All-Weather Interior Liners" class="form-control">
+                    <span class="span">$225</span>
+                    </div>
+                </div>
+            </section>
+            <section class="column">
+            <h3>Total Price</h3>
+            <p id="total-price" class="text-ld">$52,490</p>
+            </section>
+            <div class="column">
+                <h3 class="text-ld">Estimated Payment Breakdown</h3>
+                <ul class="list">
+                    <li id="down-payment">Down Payment: <strong>$5000</strong></li>
+                    <li>Loan Term: <strong>60 Months</strong></li>
+                    <li>Interest Rate: <strong><span id="myRate">3</span>% APR</strong></li>
+                    <li id="monthly-payment">Estimated Monthly Payment <strong>$818.65</strong></li>
+                </ul>
+            </div>
+        </section>
+        </section>
+        
+    </main>
+</body>
+</html>
